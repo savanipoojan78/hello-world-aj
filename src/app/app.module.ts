@@ -45,6 +45,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap'
       {path:'login',component:LoginComponent},
       {path:'admin/products',component:AdminProductsComponent},
       {path:'admin/orders',component:AdminOrdersComponent},
+      {path:'my/order',component:MyOrdersComponent}
     ]),
     NgbModule
   ],
