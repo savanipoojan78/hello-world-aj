@@ -16,7 +16,7 @@ export class LoginComponent {
   ngOnInit(): void {
   }
   
-  login() {
+login() {
     this.auth.signInWithPopup(new auth.GoogleAuthProvider());
   }
   
