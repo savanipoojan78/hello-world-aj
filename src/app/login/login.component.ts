@@ -10,7 +10,7 @@ import { auth } from 'firebase/app';
 
 export class LoginComponent {
 
-  constructor(public auth: AngularFireAuth) {
+  constructor(private auth: AngularFireAuth) {
   }
   
   ngOnInit(): void {
@@ -19,7 +19,5 @@ export class LoginComponent {
   login() {
     this.auth.signInWithPopup(new auth.GoogleAuthProvider());
   }
-  logout() {
-    this.auth.signOut();
-  }
+  
 }
